@@ -19,6 +19,8 @@ body {
     width: 100vw;
 }
 
+/* SIDE BAR  */
+
 #sidebar {
     background-color: var(--brown);
     grid-area: 1 / 1 / 4 / 2;
@@ -27,7 +29,7 @@ body {
 .dashboard {
     display: flex;
     align-items: center;
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: 30px;
     gap: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -36,6 +38,40 @@ body {
 .dashboard p {
     margin: 15px 0px;
 }
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.nav-top{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 15px;
+}
+
+.nav-bottom{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1fr;
+    padding-left: 20px;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.navlink {
+    display: flex;
+    gap: 10px;
+}
+
+.nav img {
+    margin-right: 15px;
+}
+/* END SIDE BAR */
 
 #header {
     background-color: var(--tan);
