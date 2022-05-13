@@ -9,6 +9,7 @@
 
 body {
     margin: 0;
+    display: inline-block;
 }
 
 .container {
@@ -21,6 +22,19 @@ body {
 #sidebar {
     background-color: var(--brown);
     grid-area: 1 / 1 / 4 / 2;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    font-size: clamp(20px, 5vw, 30px);
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dashboard p {
+    margin: 15px 0px;
 }
 
 #header {
