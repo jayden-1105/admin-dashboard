@@ -162,7 +162,7 @@ body {
     padding-left: 10px;
 }
 
-#projects h3 {
+#projects h3, #announcements h3, #trending h3 {
     grid-column: 1 / -1;
     margin-bottom: 0;
 }
@@ -190,6 +190,8 @@ body {
     justify-self: end;
 }
 
+/* PROJECTS END */
+
 
 #announcements {
     background-color: var(--light-grey);
@@ -200,4 +202,17 @@ body {
     background-color: var(--light-grey);
     grid-area: 3 / 3 / 4 / 4;
 
+}
+
+#trending, #announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.announcement-container, .trending-container{
+    border: 1px solid var(--dark-grey);
+    padding-left: 10px;
 }
