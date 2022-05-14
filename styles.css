@@ -8,13 +8,14 @@
 }    
 
 body {
+    font-size: 20px;
     margin: 0;
     display: inline-block;
 }
 
 .container {
     display: grid;
-    grid-template: 1fr 2fr 2fr / 1fr 3fr 1fr;
+    grid-template: 1fr 2fr 2fr / 1fr 4fr 1fr;
     height: 100vh;
     width: 100vw;
 }
@@ -71,11 +72,79 @@ body {
 .nav img {
     margin-right: 15px;
 }
+
+.searchbar img {
+    margin-right:
+}
 /* END SIDE BAR */
+
+
+/* HEADER */
 
 #header {
     background-color: var(--tan);
     grid-area: 1 / 2 / 2 / 4;
+    display: grid;
+    grid-template: 1fr 1.5fr / 6fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.searchbar {
+    display: flex;
+    padding-left: 5%;
+}
+
+.searchbar-input {
+    width: max(200px, 50vw);
+    margin-right: 10px;
+    height: 24px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-grey);
+    background-color: var(--light-grey);
+}
+
+.notify {
+    justify-self: right;
+}
+
+.username {
+    font-weight: bolder;
+    justify-self: left;
+}
+
+.profile-information {
+    display: flex;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.profile-information img {
+    padding-right: 15px;
+}
+
+.welcome p:nth-child(1) {
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.welcome p:nth-child(2) {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+#header button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: var(--brown);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 #projects {
