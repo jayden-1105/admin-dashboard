@@ -11,12 +11,12 @@ body {
     font-size: 20px;
     margin: 0;
     display: inline-block;
+    font-family: 'Heebo', sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template: 1fr 2fr 2fr / 1fr 4fr 1.5fr;
-    height: 100vh;
+    grid-template: 200px 2fr 2fr / 1fr 4fr 1.5fr;
     width: 100vw;
 }
 
@@ -145,6 +145,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
+    margin: 0px 5px;
 }
 
 /* END HEADER */
@@ -156,8 +157,8 @@ body {
     grid-area: 2 / 2 / 4 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto minmax(200px, 1fr) minmax(200px, 1fr);
-    grid-auto-rows: minmax(200px, 1fr);
+    grid-template-rows: auto minmax(250px, 1fr) minmax(250px, 1fr);
+    grid-auto-rows: minmax(250px, 1fr);
     gap: 10px;
     padding-left: 10px;
 }
@@ -173,21 +174,32 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     padding: 0px 15px;
+    background-color: var(--dark-brown);
+    border-radius: 20px;
 }
 
-.card p, .card h4 {
+.card p {
     margin: 10px 0px;
+    font-size: clamp(15px, 2vw, 20px);
+    overflow: hidden;
 }
 
 .card h4 {
     align-self: center;
+    font-size: clamp(15px, 7vw, 25px);
+    margin: 10px 0px;
 }
 
 .card-buttons {
     padding-right: 10%;
     gap: 15px;
-    align-self: center;
+    align-self: top;
     justify-self: end;
+}
+
+.card-buttons button {
+    background-color: var(--dark-brown);
+    border: none;
 }
 
 /* PROJECTS END */
@@ -206,13 +218,36 @@ body {
 
 #trending, #announcements {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(200px, 1fr);
     grid-template-rows: auto 1fr;
     padding-left: 20px;
     padding-right: 20px;
+    gap: 10px;
+    
 }
 
 .announcement-container, .trending-container{
-    border: 1px solid var(--dark-grey);
-    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    padding: 0px 10px;
+    background-color: var(--dark-brown);
+    border-radius: 20px;
+}
+
+.trending-content, .announcement-content {
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.announcement-content h4 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.announcement-content p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
 }
