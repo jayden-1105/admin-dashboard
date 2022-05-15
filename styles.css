@@ -251,3 +251,14 @@ body {
     margin-bottom: 15px;
     font-size: 15px;
 }
+
+.trending-content {
+    display: flex;
+    align-items: center;
+}
+
+.trending-content h4, .trending-content p {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
